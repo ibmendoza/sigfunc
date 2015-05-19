@@ -1,6 +1,7 @@
 package sigfunc
 
-//Author: Gani Mendoza (itjumpstart.wordpress.com)
+//License: MIT
+//Copyright (c) 2015 Isagani Mendoza (itjumpstart.wordpress.com)
 
 //Function signature for reading, writing and processing data (usually JSON)
 //A read or write is a process (DAL, DML, etc)
