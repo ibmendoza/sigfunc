@@ -13,15 +13,30 @@ Since JSON can represent any business data structure, I opted for
 `map[string]interface{}` type so your function can easily consume or generate 
 JSON data if desired.
 
+### Type MapSI
+
+A shorthand convenience type for `map[string]interface{}`
+
 
 ### Function signature
 
-Function signature                                            |        Result              
---------------------------------------------------------------|-------------------------
-func Process00()                                              | none                      
-func Process01() map[string]interface{}                       | map[string]interface{}  
-func Process10(map[string]interface{})                        | none                    
-func Process11(map[string]interface{}) map[string]interface{} | map[string]interface{}   
+Function signature          |        Result              
+----------------------------|-------------------------
+func Process00()            | none                      
+func Process01() MapSI      | map[string]interface{}  
+func Process10(MapSI)       | none                    
+func Process11(MapSI) MapSI | map[string]interface{}   
+
+### Why 00, 01, 10 and 11 suffixes?
+
+Elementary, my dear Watson.
+
+Suffix |  With parameter? | With result?
+-------|------------------|-------------
+00     | No               | No 
+01     | No               | Yes
+10     | Yes              | No
+11     | Yes              | Yes
 
 
 ### Limitation
