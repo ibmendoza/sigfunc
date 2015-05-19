@@ -19,8 +19,8 @@ JSON data if desired.
 Function signature                                            |        Result              
 --------------------------------------------------------------|-------------------------
 func Process00()                                              | none                      
-func Process01()                                              | map[string]interface{}  
-func Process10() map[string]interface{}                       | none                    
+func Process01() map[string]interface{}                       | map[string]interface{}  
+func Process10(map[string]interface{})                        | none                    
 func Process11(map[string]interface{}) map[string]interface{} | map[string]interface{}   
 
 
